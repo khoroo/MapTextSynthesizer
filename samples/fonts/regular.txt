@@ -251,7 +251,7 @@ Playfair Display
 Podkova
 Podkova VF Beta
 Poly
-Pompiere 
+Pompiere
 Pontano Sans
 Poor Story
 Port Lligat Sans
@@ -322,7 +322,7 @@ Stoke
 Strait
 Strong
 Stylish
-Sue Ellen Francisco 
+Sue Ellen Francisco
 Sumana
 Sura
 Suranna
