@@ -18,7 +18,6 @@
 
 import numpy as np
 import ctypes as c
-from google.colab.patches import cv2_imshow
 import matplotlib.pyplot as plt
 import time
 import os
@@ -133,8 +132,7 @@ def test_generator(num_values=1, show_images=False,
     for _ in range(num_values):
         caption, image = next(iter)
         if show_images:
-            print(image.shape)
-            plt.imshow(image, cmap='gray', vmin=0, vmax=255)
+            plt.imshow(image.squeeze(axis=2), cmap='gray', vmin=0, vmax=255)
             plt.show()
             # cv2_imshow(image)
             print(caption)
