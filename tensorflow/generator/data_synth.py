@@ -18,7 +18,8 @@
 
 import numpy as np
 import ctypes as c
-import cv2
+from google.colab.patches import cv2_imshow
+
 import time
 import os
 
@@ -133,8 +134,7 @@ def test_generator(num_values=10, show_images=False,
     for _ in range(num_values):
         caption, image = next(iter)
         if show_images:
-            cv2.imshow(caption, image)
-            cv2.waitKey(0)
+            cv2_imshow(caption, image)
             
     if buffered:
         pass # mtsi_lib.mts_cleanup() 
