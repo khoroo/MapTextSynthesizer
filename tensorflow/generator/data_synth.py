@@ -117,11 +117,10 @@ def data_generator(config_file):
         yield next(iter)
 
         
-def test_generator(num_values=10, show_images=False,
-                   log_time=False, buffered=False, num_producers=0):
+def test_generator(num_values=1, show_images=False,
+                   log_time=False, buffered=False, num_producers=0, config_file="config.txt"):
     """ For testing purposes only """
     iter = None
-    config_file = "config.txt"
     
     if not buffered:
         iter = data_generator(config_file)
@@ -134,7 +133,8 @@ def test_generator(num_values=10, show_images=False,
     for _ in range(num_values):
         caption, image = next(iter)
         if show_images:
-            cv2_imshow(caption, image)
+            cv2_imshow(image)
+            print(caption)
             
     if buffered:
         pass # mtsi_lib.mts_cleanup() 
