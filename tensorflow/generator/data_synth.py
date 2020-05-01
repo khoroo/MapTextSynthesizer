@@ -133,7 +133,8 @@ def test_generator(num_values=1, show_images=False,
     for _ in range(num_values):
         caption, image = next(iter)
         if show_images:
-            cv2_imshow(image)
+            print(image)
+            # cv2_imshow(image)
             print(caption)
             
     if buffered:
