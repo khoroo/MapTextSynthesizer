@@ -71,7 +71,7 @@ def get_mts_interface_lib():
 def format_sample(lib, ptr):
     """ Transform raw data ptr into usable data """
     # For c array -> numpy conversion
-    buffer_from_memory = c.pythonapi.PyBuffer_FromMemory
+    buffer_from_memory = c.pythonapi.PyMemoryView_FromMemory
     buffer_from_memory.restype = c.py_object
 
     if not ptr:
