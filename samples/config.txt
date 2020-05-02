@@ -356,8 +356,8 @@ noise_sigma_shift=0           // distribution see:
                               // https://en.wikipedia.org/wiki/Normal-inverse-gamma_distribution
 
 //Gaussian blur for Final Image
-blur_kernel_size_min=3        // Set the blur kernel size range. Note that
-blur_kernel_size_max=5        // kernel size can only be odd integer. More info:
+blur_kernel_size_min=1        // Set the blur kernel size range. Note that
+blur_kernel_size_max=3        // kernel size can only be odd integer. More info:
                               // https://en.wikipedia.org/wiki/Kernel_(image_processing)
 
 //Jpeg artifacts

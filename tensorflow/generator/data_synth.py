@@ -75,7 +75,7 @@ def format_sample(lib, ptr):
     buffer_from_memory.restype = c.py_object
 
     if not ptr:
-        print "No sample produced."
+        print("No sample produced.")
         exit()
 
     # Trivial extraction for 'simple' args
@@ -142,4 +142,4 @@ def test_generator(num_values=1, show_images=False,
     
     if log_time:
         end_time = time.time()
-        print "Time: ", end_time-start_time
+        print("Time: ", end_time-start_time)
