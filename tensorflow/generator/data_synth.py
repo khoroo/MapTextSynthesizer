@@ -99,7 +99,7 @@ def multithreaded_data_generator(config_file, num_producers):
     """ Generator to be used in tensorflow """
     mtsi_lib = get_mts_interface_lib()
     config_file_b = config_file.encode('utf-8')
-    config_file_p = c.create_string_buffer(config_file)
+    config_file_p = c.create_string_buffer(config_file_b)
     mts_buff = mtsi_lib.mts_init(config_file_b, num_producers)
 
     while True:
