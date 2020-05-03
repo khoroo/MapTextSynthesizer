@@ -51,7 +51,7 @@ def get_dataset( args=None ):
 
         while True:
             caption, image = next( gen )
-            caption = str(caption)
+            caption = caption.decode('utf-8')
 
             # Transform string text to sequence of indices using charset dict
             label = charset.string_to_label(caption)
